@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notificações | JurisLink Advogado</title>
+
+    <link rel="stylesheet" href="../css/notificacoes-advogado.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>Juris<span>Link</span></h2>
+            <small>Área do Advogado</small>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard-advogado.html" class="menu-item">
+                <span>🏠</span>
+                Dashboard
+            </a>
+
+            <a href="clientes-advogado.html" class="menu-item">
+                <span>👥</span>
+                Clientes
+            </a>
+
+            <a href="processos-advogado.html" class="menu-item">
+                <span>⚖️</span>
+                Processos
+            </a>
+
+            <a href="documentos-advogado.html" class="menu-item">
+                <span>📄</span>
+                Documentos
+            </a>
+
+            <a href="agenda-advogado.html" class="menu-item">
+                <span>📅</span>
+                Agenda
+            </a>
+
+            <a href="notificacoes-advogado.html" class="menu-item active">
+                <span>🔔</span>
+                Notificações
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <a href="../index.html" class="logout">
+                <span>🚪</span>
+                Sair
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Notificações</h1>
+                <p>Acompanhe atividades importantes dos seus processos.</p>
+            </div>
+
+            <div class="user-profile">
+
+                <div class="user-avatar">
+                    CM
+                </div>
+
+                <div class="user-info">
+                    <strong>Dr. Carlos Mendes</strong>
+                    <span>OAB/SP 123.456</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="notifications-header">
+
+            <div>
+                <h2>Central de notificações</h2>
+                <p>Atualizações sobre clientes, processos, documentos e agenda.</p>
+            </div>
+
+            <button id="markAllRead">
+                Marcar todas como lidas
+            </button>
+
+        </section>
+
+
+        <section class="notifications-list">
+
+
+            <article class="notification-card unread">
+
+                <div class="notification-icon">
+                    👤
+                </div>
+
+                <div class="notification-content">
+
+                    <div class="notification-top">
+
+                        <h3>Novo cliente cadastrado</h3>
+
+                        <span>Hoje, 15:40</span>
+
+                    </div>
+
+                    <p>
+                        Um novo cliente foi adicionado à sua carteira na JurisLink.
+                    </p>
+
+                    <a href="clientes-advogado.html">
+                        Ver clientes
+                    </a>
+
+                </div>
+
+                <div class="unread-dot"></div>
+
+            </article>
+
+
+            <article class="notification-card unread">
+
+                <div class="notification-icon">
+                    ⚖️
+                </div>
+
+                <div class="notification-content">
+
+                    <div class="notification-top">
+
+                        <h3>Processo precisa de atualização</h3>
+
+                        <span>Hoje, 11:20</span>
+
+                    </div>
+
+                    <p>
+                        O processo de João Paulo Costa não recebe uma atualização
+                        há alguns dias.
+                    </p>
+
+                    <a href="processos-advogado.html">
+                        Ver processo
+                    </a>
+
+                </div>
+
+                <div class="unread-dot"></div>
+
+            </article>
+
+
+            <article class="notification-card">
+
+                <div class="notification-icon">
+                    📅
+                </div>
+
+                <div class="notification-content">
+
+                    <div class="notification-top">
+
+                        <h3>Audiência próxima</h3>
+
+                        <span>Ontem, 18:00</span>
+
+                    </div>
+
+                    <p>
+                        Audiência trabalhista de João Paulo Costa agendada
+                        para 18 de agosto às 14:00.
+                    </p>
+
+                    <a href="agenda-advogado.html">
+                        Ver agenda
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="notification-card">
+
+                <div class="notification-icon">
+                    📄
+                </div>
+
+                <div class="notification-content">
+
+                    <div class="notification-top">
+
+                        <h3>Documento adicionado</h3>
+
+                        <span>08/08/2026</span>
+
+                    </div>
+
+                    <p>
+                        O documento Manifestação.pdf foi vinculado ao processo
+                        0001234-56.2026.8.26.0100.
+                    </p>
+
+                    <a href="documentos-advogado.html">
+                        Ver documentos
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="notification-card">
+
+                <div class="notification-icon">
+                    ⏳
+                </div>
+
+                <div class="notification-content">
+
+                    <div class="notification-top">
+
+                        <h3>Prazo próximo</h3>
+
+                        <span>07/08/2026</span>
+
+                    </div>
+
+                    <p>
+                        Existe um prazo processual previsto para os próximos dias.
+                    </p>
+
+                    <a href="agenda-advogado.html">
+                        Ver compromisso
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/notificacoes-advogado.js"></script>
+
+</body>
+</html>

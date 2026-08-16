@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atualizar Processo | JurisLink</title>
+
+    <link rel="stylesheet" href="../css/atualizar-processo.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>Juris<span>Link</span></h2>
+            <small>Área do Advogado</small>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard-advogado.html" class="menu-item">
+                <span>🏠</span>
+                Dashboard
+            </a>
+
+            <a href="clientes-advogado.html" class="menu-item">
+                <span>👥</span>
+                Clientes
+            </a>
+
+            <a href="processos-advogado.html" class="menu-item active">
+                <span>⚖️</span>
+                Processos
+            </a>
+
+<a href="documentos-advogado.html" class="menu-item">
+    <span>📄</span>
+    Documentos
+</a>
+
+<a href="agenda-advogado.html" class="menu-item">
+    <span>📅</span>
+    Agenda
+</a>
+
+<a href="notificacoes-advogado.html" class="menu-item">
+    <span>🔔</span>
+    Notificações
+</a>
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <a href="../index.html" class="logout">
+                <span>🚪</span>
+                Sair
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="back-area">
+            <a href="processos-advogado.html">
+                ← Voltar para processos
+            </a>
+        </div>
+
+
+        <header class="topbar">
+
+            <div>
+                <h1>Atualizar Processo</h1>
+                <p>Adicione uma nova movimentação para o cliente.</p>
+            </div>
+
+            <div class="user-profile">
+
+                <div class="user-avatar">
+                    CM
+                </div>
+
+                <div class="user-info">
+                    <strong>Dr. Carlos Mendes</strong>
+                    <span>OAB/SP 123.456</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="process-summary">
+
+            <div>
+
+                <span class="label">
+                    Processo selecionado
+                </span>
+
+                <h2>
+                    Ação Trabalhista
+                </h2>
+
+                <p>
+                    0001234-56.2026.8.26.0100
+                </p>
+
+            </div>
+
+            <div class="client-info">
+
+                <span>Cliente</span>
+
+                <strong>
+                    João Paulo Costa
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <section class="form-card">
+
+            <div class="form-header">
+
+                <h2>Nova atualização</h2>
+
+                <p>
+                    Essa movimentação ficará disponível para o cliente.
+                </p>
+
+            </div>
+
+
+            <form id="updateForm">
+
+                <div class="form-group">
+
+                    <label for="titulo">
+                        Título da atualização
+                    </label>
+
+                    <input
+                        type="text"
+                        id="titulo"
+                        placeholder="Ex: Audiência agendada"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="descricao">
+                        Descrição
+                    </label>
+
+                    <textarea
+                        id="descricao"
+                        rows="6"
+                        placeholder="Descreva a movimentação do processo..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="data">
+                            Data
+                        </label>
+
+                        <input
+                            type="date"
+                            id="data"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="status">
+                            Status do processo
+                        </label>
+
+                        <select id="status">
+
+                            <option value="Em andamento">
+                                Em andamento
+                            </option>
+
+                            <option value="Aguardando decisão">
+                                Aguardando decisão
+                            </option>
+
+                            <option value="Concluído">
+                                Concluído
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <a href="processos-advogado.html" class="btn-cancel">
+                        Cancelar
+                    </a>
+
+                    <button type="submit" class="btn-save">
+                        Publicar atualização
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <div id="successMessage" class="success-message">
+
+            ✅ Atualização publicada com sucesso!
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../js/atualizar-processo.js"></script>
+
+</body>
+</html>

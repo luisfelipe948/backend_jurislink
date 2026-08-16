@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Documentos | JurisLink</title>
+
+    <link rel="stylesheet" href="../css/documentos.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <h2>Juris<span>Link</span></h2>
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a href="dashboard.html" class="menu-item">
+                    <span>🏠</span>
+                    Dashboard
+                </a>
+
+                <a href="processos.html" class="menu-item">
+                    <span>⚖️</span>
+                    Processos
+                </a>
+
+                <a href="documentos.html" class="menu-item active">
+                    <span>📄</span>
+                    Documentos
+                </a>
+
+<a href="agenda.html" class="menu-item">
+    <span>📅</span>
+    Agenda
+</a>
+
+<a href="notificacoes.html" class="menu-item">
+    <span>🔔</span>
+    Notificações
+</a>
+
+<a href="configuracoes.html" class="menu-item">
+    <span>⚙️</span>
+    Configurações
+</a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+
+                <a href="../index.html" class="logout">
+                    <span>🚪</span>
+                    Sair
+                </a>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+                    <h1>Documentos</h1>
+                    <p>Acesse os arquivos relacionados aos seus processos.</p>
+                </div>
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        JP
+                    </div>
+
+                    <div class="user-info">
+                        <strong>João Paulo</strong>
+                        <span>Cliente</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="documents-header">
+
+                <div>
+                    <h2>Meus documentos</h2>
+                    <p>Visualize os arquivos enviados pelo seu advogado.</p>
+                </div>
+
+                <div class="search-area">
+                    <input
+                        type="text"
+                        placeholder="Buscar documento..."
+                    >
+                </div>
+
+            </section>
+
+            <section class="documents-grid">
+
+                <div id="dynamicDocuments"></div>
+
+                <article class="document-card">
+
+                    <div class="document-icon">
+                        📄
+                    </div>
+
+                    <div class="document-content">
+
+                        <span class="document-type">
+                            PDF
+                        </span>
+
+                        <h2>
+                            Petição inicial
+                        </h2>
+
+                        <p>
+                            Ação Trabalhista
+                        </p>
+
+                        <div class="document-details">
+                            <span>1.2 MB</span>
+                            <span>09/08/2026</span>
+                        </div>
+
+                    </div>
+
+                    <div class="document-actions">
+
+                        <button class="btn-view">
+                            Visualizar
+                        </button>
+
+                        <button class="btn-download">
+                            Baixar
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="document-card">
+
+                    <div class="document-icon">
+                        📄
+                    </div>
+
+                    <div class="document-content">
+
+                        <span class="document-type">
+                            PDF
+                        </span>
+
+                        <h2>
+                            Comprovantes
+                        </h2>
+
+                        <p>
+                            Ação Trabalhista
+                        </p>
+
+                        <div class="document-details">
+                            <span>840 KB</span>
+                            <span>05/08/2026</span>
+                        </div>
+
+                    </div>
+
+                    <div class="document-actions">
+
+                        <button class="btn-view">
+                            Visualizar
+                        </button>
+
+                        <button class="btn-download">
+                            Baixar
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="document-card">
+
+                    <div class="document-icon">
+                        📄
+                    </div>
+
+                    <div class="document-content">
+
+                        <span class="document-type">
+                            PDF
+                        </span>
+
+                        <h2>
+                            Manifestação
+                        </h2>
+
+                        <p>
+                            Ação Trabalhista
+                        </p>
+
+                        <div class="document-details">
+                            <span>620 KB</span>
+                            <span>28/07/2026</span>
+                        </div>
+
+                    </div>
+
+                    <div class="document-actions">
+
+                        <button class="btn-view">
+                            Visualizar
+                        </button>
+
+                        <button class="btn-download">
+                            Baixar
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="document-card">
+
+                    <div class="document-icon">
+                        📄
+                    </div>
+
+                    <div class="document-content">
+
+                        <span class="document-type">
+                            PDF
+                        </span>
+
+                        <h2>
+                            Decisão judicial
+                        </h2>
+
+                        <p>
+                            Processo Cível
+                        </p>
+
+                        <div class="document-details">
+                            <span>980 KB</span>
+                            <span>06/08/2026</span>
+                        </div>
+
+                    </div>
+
+                    <div class="document-actions">
+
+                        <button class="btn-view">
+                            Visualizar
+                        </button>
+
+                        <button class="btn-download">
+                            Baixar
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/documentos.js"></script>
+</body>
+</html>
