@@ -1,4 +1,4 @@
-import processosModel from "../models/processosModel.js";
+import processoModel from "../models/processosModel.js";
 import pool from "../database/database.js";
 
 class ProcessosController {
